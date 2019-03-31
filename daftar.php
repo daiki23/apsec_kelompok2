@@ -1,3 +1,4 @@
+<?php include('cek_daftar.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,13 +31,30 @@
 					<img src="sources/login_sources/images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" action="cek_login.php" method="post">
+				<form class="login100-form validate-form" action="daftar.php" method="post">
 					<span class="login100-form-title">
+
 						Member Registration
 					</span>
 
+					<div class="wrap-input100 validate-input" data-validate = "Masukkan nama lengkap yang benar!">
+						<input class="input100" type="text" name="nama" placeholder="nama lengkap" value="<?php echo $nama; ?>" >
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+
 					<div class="wrap-input100 validate-input" data-validate = "Masukkan username yang benar!">
-						<input class="input100" type="text" name="username" placeholder="username">
+						<input class="input100" type="text" name="username" placeholder="username" value="<?php echo $username; ?>" >
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Masukkan Email yang benar!">
+						<input class="input100" type="text" name="email" placeholder="email" value="<?php echo $email; ?>">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -44,27 +62,63 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Masukkan password yang benar!">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="password_1" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Masukkan password yang benar!">
+						<input class="input100" type="password" name="password_2" placeholder="Konfirmasi Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<!-- <input type="hidden" id="level" name="level" value="1"> -->
+						<!-- <div class="wrap-input100 validate-input" data-validate = "Masukkan password yang benar!">
+						<select name="level">
+
+						<option value="3">User</option>
+						<option value="2">Creator</option>
+
+						</select>
+						</div> -->
+
+		            
+		                <div class="form-group">
+		                  
+		                  <select class="form-control" name="level">
+		                      <option value="3">User</option>
+		                      <option value="2">Creator</option>
+		                  </select>
+		              </div>
+					
+					
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" type="submit" value="LOGIN">
+						<button class="login100-form-btn" type="submit" value="register" name="reg_user">
 							Daftar
 						</button>
 					</div>
 
+					<br>
 					
-
+					<i class="fa fa-home m-l-5" aria-hidden="true"></i>	
+							<a class="txt2" href="index.php">
+							Kembali Ke Home
+							
+						</a>
 					<div class="text-center p-t-136">
 						<a class="txt2" href="login.php">
 							sudah punya akun? masuk
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
 					</div>
+					
+					
 				</form>
 			</div>
 		</div>

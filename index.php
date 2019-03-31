@@ -50,7 +50,11 @@
     <![endif]-->
     
 
+
+
+
 </head>
+
 
 <body>
     <div class="main home-2">
@@ -64,8 +68,32 @@
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 top-account sm-width sm-width-33">
                             <div class="top-accounts">
                                 <ul>
+                                   
+
+
+
+                                    <?php 
+                                            // mengaktifkan session pada php
+                                            session_start();
+
+                                            // menghubungkan php dengan koneksi database
+                                            include 'koneksi.php';
+
+                                            // $user = mysqli_query($koneksi,"select * from user");
+                                            // $data = mysqli_fetch_assoc($user);
+                                            // $level = $data['level'];
+
+                                            if(isset($_SESSION['level'])){
+                                            ?>
+                                    
+                                    <li><a href="logout.php"><span class="fa fa-lock"></span>logout</a></li>
+
+                                <?php }else{ ?>
                                     <li><a href="daftar.php"><span class="fa fa-user"></span>Daftar</a></li>
                                     <li><a href="login.php"><span class="fa fa-lock"></span>Masuk</a></li>
+                                    
+
+                                <?php } ?>
                                 </ul>
                             </div>
                         </div>
