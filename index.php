@@ -48,6 +48,8 @@
     <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    
+
 </head>
 
 <body>
@@ -117,6 +119,7 @@
                                     <li><a href="index.php?page=events">events page 1</a></li>
                                     <li><a href="index_2.html">events page 2</a></li>
                                     <li><a href="index_3.html">events page 3</a></li>
+                                    
                                     
                                 </ul>
                             </li>

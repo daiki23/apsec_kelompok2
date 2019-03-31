@@ -60,7 +60,7 @@
 					
 
 					<div class="text-center p-t-136">
-						<a class="txt2" href="sources/login_sources/#">
+						<a class="txt2" href="login.php">
 							sudah punya akun? masuk
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
@@ -90,6 +90,6 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="sources/login_sources/js/main.js"></script>
-	
+
 </body>
 </html>
