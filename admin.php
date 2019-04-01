@@ -22,6 +22,7 @@
 
   <!-- Custom styles for this page -->
   <link href="sources/panel_sources/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  <link href="images/favicon2.png" rel="icon">
 
 
 
@@ -32,6 +33,8 @@
   if($_SESSION['level']==""){
     header("location:index.php?pesan=gagal");
   }
+
+  include 'base_url.php';
 
   ?>
 
@@ -48,7 +51,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin.php">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="fas fa-user"></i>
         </div>
         <div class="sidebar-brand-text mx-3">Indie-Talk<sup>2</sup></div>
       </a>
@@ -140,6 +143,14 @@
                 </form>
               </div>
             </li>
+
+          <!-- Nav Item - Home -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="<?php echo $base_url ?>" id="alertsDropdown">
+                <i class="fas fa-home fa-fw"></i>
+        
+                
+              </a>
 
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1">
@@ -252,7 +263,7 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['username']; ?></span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                <img class="img-profile rounded-circle" src="images/avatar.png">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
