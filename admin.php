@@ -70,13 +70,36 @@
       <hr class="sidebar-divider">
 
 
+                          <?php 
+                      
+
+                      // cek apakah yang mengakses halaman ini sudah login
+                      if($_SESSION['level']=="1"){
+                        
+                      
+
+                      ?>
+
+
+
       <!-- Nav Item - Charts -->
       <li class="nav-item">
         <a class="nav-link" href="admin.php?page=user">
           <i class="fas fa-fw fa-user"></i>
           <span>user</span></a>
       </li>
+       <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Review</span></a>
+      </li>
 
+            <?php }else{
+
+                
+
+             ?>
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
@@ -84,6 +107,7 @@
           <span>Review</span></a>
       </li>
 
+         <?php } ?>
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
