@@ -289,8 +289,8 @@
             case 'user':
                 include "admin/user_add.php";
                 break;
-            case 'events':
-                include "admin/events.php";
+            case 'edit':
+                include "edit.php";
                 break;
             case 'contacts':
                 include "admin/contacts.php";

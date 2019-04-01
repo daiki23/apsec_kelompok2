@@ -56,8 +56,9 @@
                       <td><?php echo $data["password"];?></td>
                       <td><?php echo $data["level"];?></td>
                       <td>
-                        <a href="hapus.php?id_user=<?php echo $data['id_user']; ?>">Delete</a> |
-                        <a href="#">Update</a>  
+                        <a href="hapus.php?id_user=<?php echo $data['id_user']; ?>">Delete</a> 
+                        <a href="admin.php?page=edit&id_user=<?php echo $data['id_user']; ?> " >Update</a>  
+                        
                       </td>
                     </tr>
                     <?php $no++; } ?>
@@ -68,5 +69,7 @@
               </div>
             </div>
           </div>
+
+   
 
         </div>

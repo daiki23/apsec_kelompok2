@@ -1,5 +1,6 @@
 <?php 
 $koneksi = mysqli_connect("localhost","root","","db_apsec");
+
  
 // Check connection
 if (mysqli_connect_errno()){
